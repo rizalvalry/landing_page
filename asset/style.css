@@ -1,0 +1,179 @@
+/*Zona Body Primary cermati test */
+body, .grey {
+    background-color: #E5E5E5;
+}
+
+/* Utility Keseluruhan */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    width:100%;
+    z-index: 1;
+}
+
+.navbar-header {
+    margin-bottom: auto;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.custom-container {
+    padding: 15px 30px;
+    margin: 60px 0 60px;
+}
+
+
+
+i, .icon {
+    color: #A6A6A6;
+}
+
+.bg-power {
+    background-color: #E5E5E5 !important;
+}
+
+/* JumboTron Banner Highlights*/
+.jumbotron {
+    background-image: url(../banner.jpg);
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgb(0, 148, 255, 0.3), rgb(0, 38, 255, 0.4));
+    position: absolute;
+    bottom: 0;
+
+}
+    
+.jumbotron .display-5 {
+    position: unset;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.thin {
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.button2 {
+    font-weight: bold;
+    color: black;
+    border: 1.5px solid #008CBA;
+}
+
+    .button2:hover {
+        background-color: #008CBA;
+        cursor: pointer;
+        color: #f8f9fa30;
+        opacity: 0.7;
+       
+    }
+
+.bg-custom {
+    background-color: #050325;
+}
+
+.card-body {
+    border-radius: 30px;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 550px;
+    background-color: #006FB4;
+    opacity: 0.8;
+    border-radius: 3px;
+    /*border: 3px solid #73AD21;*/
+}
+
+.m-auto {
+    padding: 20px 30px;
+    color: white;
+}
+
+.form-control, .full-small {
+    width: 100%;
+    max-width: 300px;
+    max-height: 30px;
+}
+
+.card {
+    height: 195px;
+    margin: 10px 0px 15px auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 2px 1px 1px rgb(0, 0, 0) !important;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    /* silahkan memilih salah satu box-shadow nya */
+    box-shadow: inset 0 0 5px #FFFFC8;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.x {
+    font-size:16px; 
+    color:white;
+}
+
+.hover-close {
+    color: white;
+}
+
+a, .hover-close:hover {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+/* Custom Responsive */
+@media (max-width: 992px) {
+    .jumbotron {
+        margin-top: -20px;
+    }
+
+}
+
+@media (max-width: 565px) {
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 240px;
+        width: 100%;
+        background-color: #006FB4;
+        opacity: 0.8;
+        border-radius: 3px;
+        /*border: 3px solid #73AD21;*/
+    }
+    .detail-btn-edit {
+        margin: 15px auto;
+        width: 100%;
+    }
+    .detail-mobile-edit {
+        min-width: 100%;
+    }
+}
+
