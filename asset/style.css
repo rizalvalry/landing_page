@@ -1,4 +1,50 @@
-/*Zona Body Primary cermati test */
+/* Media Query Responsive */
+/* Two Columns */
+@media (min-width: 480px) and (max-width: 960px) {
+    * {
+        box-sizing: border-box !important;
+    }
+
+    /* Create two equal columns */
+    .column {
+        float: left !important;
+        width: 50% !important;
+        padding: 10px !important;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "" !important;
+        display: table !important;
+        clear: both !important;
+    }
+
+    .card {
+        height: 300px !important;
+        margin: 10px 0px 15px auto;
+    }
+
+    .card-text {
+        font-size: 12.5px;
+    }
+
+    .custom-container {
+        padding: 15px 30px;
+        margin: 60px 0 60px;
+    }
+}
+
+/*Custom Responsive*/
+@media (min-width: 961px) and (max-width: 1238px) {
+    /*.jumbotron {
+        margin-top: -20px;
+    }*/
+    .card-text {
+        font-size: 13.6px;
+    }
+}
+
+/*Zone Primary Body cermati test */
 body, .grey {
     background-color: #E5E5E5;
 }
@@ -7,7 +53,7 @@ body, .grey {
 .navbar {
     position: fixed !important;
     top: 0;
-    width:100%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -15,15 +61,12 @@ body, .grey {
     margin-bottom: auto;
     text-align: left;
     width: 100%;
-    
 }
 
 .custom-container {
     padding: 15px 30px;
     margin: 60px 0 60px;
 }
-
-
 
 i, .icon {
     color: #A6A6A6;
@@ -43,35 +86,48 @@ i, .icon {
     position: relative;
 }
 
-.jumbotron .container {
+    .jumbotron .container {
+        z-index: 1;
+        position: relative;
+    }
+
+    .jumbotron::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgb(0, 63, 76, 0.6), rgb(0, 63, 125, 0.6));
+        position: absolute;
+        bottom: 0;
+    }
+
+    .jumbotron .display-5 {
+        position: unset;
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+/* Logo */
+.logo {
+    background-image: url(../logo.png);
+    background-size: cover;
     z-index: 1;
-    position: relative;
-}
-
-.jumbotron::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgb(0, 148, 255, 0.3), rgb(0, 38, 255, 0.4));
+    float: left !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 15px 15px !important;
     position: absolute;
-    bottom: 0;
-
-}
-    
-.jumbotron .display-5 {
-    position: unset;
-    color: white;
-    text-align: center;
-    margin-top: 150px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
+/* Style Fonts */
 .thin {
     font-weight: 100;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
+/* Zone Button Style  */
 .button2 {
     font-weight: bold;
     color: black;
@@ -83,11 +139,28 @@ i, .icon {
         cursor: pointer;
         color: #f8f9fa30;
         opacity: 0.7;
-       
     }
 
+.text-blue {
+    color: #003CFF !important;
+}
+
+.btn-get {
+    background-color: #008EE2 !important;
+}
+
+.btn-yellow {
+    background-color: #FA7F00 !important;
+}
+
+/* Background & Panel */
+.alert-custom {
+    background-color: #2E87BE !important;
+    color: white;
+}
+
 .bg-custom {
-    background-color: #050325;
+    background-color: #002E5A;
 }
 
 .card-body {
@@ -118,7 +191,7 @@ div.fixed {
 }
 
 .card {
-    height: 195px;
+    height: 192px !important;
     margin: 10px 0px 15px auto;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     border: 2px 1px 1px rgb(0, 0, 0) !important;
@@ -130,50 +203,98 @@ div.fixed {
 }
 
 .x {
-    font-size:16px; 
-    color:white;
+    font-size: 16px;
+    color: white;
 }
 
 .hover-close {
     color: white;
 }
 
-a, .hover-close:hover {
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-
-/* Custom Responsive */
-@media (max-width: 992px) {
-    .jumbotron {
-        margin-top: -20px;
+    a, .hover-close:hover {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        text-align: center;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
     }
-
+/* Alert */
+.alert {
+    display: none;
 }
 
-@media (max-width: 565px) {
+.styleshit {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* Media Query Responsive */
+@media (min-width: 320px) and (max-width: 767px) {
     div.fixed {
         position: fixed;
         bottom: 0;
         left: 0;
-        height: 240px;
+        height: 280px;
         width: 100%;
         background-color: #006FB4;
         opacity: 0.8;
         border-radius: 3px;
         /*border: 3px solid #73AD21;*/
     }
-    .detail-btn-edit {
-        margin: 15px auto;
+}
+
+/* Media Query Responsive - Button Panel */
+@media (min-width: 961px) and (max-width: 995px) {
+    .space-button {
+        margin: 5px auto 0 !important;
         width: 100%;
-    }
-    .detail-mobile-edit {
-        min-width: 100%;
+        bottom: 5px !important;
     }
 }
 
+/* Universe Responsive */
+@media (min-width: 320px) and (max-width: 960px) {
+    .detail-btn-submit {
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    .detail-mobile-submit {
+        min-width: 100%;
+    }
+
+    .btn-yellow {
+        background-color: #EC5F00;
+    }
+
+    .card {
+        height: 245px !important;
+        margin: 10px 0px 15px auto;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        border: 2px 1px 1px rgb(0, 0, 0) !important;
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 5px #000000;
+        /* silahkan memilih salah satu box-shadow nya */
+        box-shadow: inset 0 0 5px #FFFFC8;
+        box-shadow: 3px 3px 5px 6px #ccc;
+    }
+
+    .logo {
+        /*padding: 20px 20px 10px 5px;*/
+        min-height: 50px;
+        min-width: 50px;
+        top: 130px;
+        margin: 5px 30px 30px !important;
+    }
+
+    .logo-container {
+        padding: 15px 20px;
+    }
+
+    .jumbotron {
+        height: 565px;
+    }
+}

@@ -21,17 +21,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- No Need Guys -->
     <!--<script src="jquery.js"></script>-->
-
-    <!-- Custom styles  -->
-    <link href="jumbotron.css" rel="stylesheet">
 </head>
 
 <body class="grey">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Alert Terms & Condition -->
+    <div class="alert alert-custom alert-dismissable styleshit" role="alert">
+        Success! You can access this full content successfully.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!-- Main jumbotron for a primary banner & call to action -->
     <div class="jumbotron jumbotron-fluid">
+        <div class="logo-container">
+            <div class="logo"></div>
+        </div>
         <div class="container">
 
             <h1 class="display-5">
@@ -45,41 +54,29 @@
                 I'll help you to make it happen.<br />
 
             </p>
-            <p class="text-center"><button class="button2 btn-outline-light btn-sm text-uppercase" href="#" role="button">Let's Make Contact</button></p>
+            <p class="text-center"><button class="button2 btn-outline-light btn-sm text-uppercase" id="whatsapp" href="#" role="button">Let's Make Contact</button></p>
         </div>
     </div>
-    <!-- //Jumbotron hidden after scrolling navbar// -->
 
+    <!-- Navbar Newsletter -->
     <nav class="navbar navbar-light bg-light" role="navigation">
         <div class="navbar-header">
             <div class="d-flex justify-content-center">
-                <div class="col-sm-4">
-                    <label class="view-data__label form-custom-label small">By Accessing and using this website, you acknowledge that you have read and understand our Cookie Policy, privacy police, and our Terms of Services. </label>
+                <div class="col-lg-4">
+                    <label class="view-data__label form-custom-label small">By Accessing and using this website, you acknowledge that you have read and understand our <span class="text-blue">Cookie Policy</span>, <span class="text-blue">privacy police</span>, and our <span class="text-blue">Terms of Services</span>. </label>
                 </div>
                 <div class="container-button">
-                    <button class="btn btn-primary btn-md  mb-3 drop float-left" type="button" name="button">Got it</button>
+                    <button class="btn btn-primary btn-get btn-md mb-3 drop float-left swal" type="button" name="button">Got it</button>
+
                 </div>
             </div>
         </div>
     </nav>
 
-    <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-grey">
-        <div class="navbar-header">
-            <div class="d-flex justify-content-center">
-                <div class="col-sm-8">
-                    <label class="view-data__label form-custom-label small">
-                        By accessing and using this website, you acknowledge that you have read and
-                        understand our Cookie Policy, Privacy Policy, and our Terms of Service.
-                    </label>
-                </div>
-                <div class="col-sm-8">
-                    <button type="button" class="btn btn-primary">Got it</button>
-                </div>
-            </div>
-            </div>
-    </nav>-->
+
+    <!-- Center Help -->
     <div class="d-flex justify-content-center">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <h1 class="display-5 thin mt-auto text-center mb-0">
                 How Can I Help You?
             </h1>
@@ -90,11 +87,11 @@
         </div>
     </div>
 
+    <!-- row of columns | Grid 12:3 = 4-col (Bootstrap Rumus Grid)-->
     <main role="main">
         <div class="custom-container">
-            <!-- row of columns | Grid 12:3 = 4-col (Bootstrap Rumus Grid)-->
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Consult <span class="float-right"><i class="fas fa-comments"></i></span></h5>
@@ -106,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Design <span class="float-right"><i class="fas fa-paint-brush"></i></span></h5>
@@ -118,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Develop <span class="float-right"><i class="fas fa-cubes"></i></span></h5>
@@ -130,8 +127,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 ">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Marketing <span class="float-right"><i class="fas fa-bullhorn"></i></span></h5>
@@ -143,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Manage <span class="float-right"><i class="fa fa-tasks"></i></span></h5>
@@ -155,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 column">
                     <div class="card bg-power">
                         <div class="card-body">
                             <h5 class="card-title">Evolve <span class="float-right"><i class="fas fa-chart-line icon"></i></span></h5>
@@ -170,19 +166,14 @@
                 </div>
             </div>
         </div> <!-- /container -->
-
     </main>
 
     <!-- Footer -->
     <footer class="page-footer text-light form-custom-label small bg-custom">
-
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-            © 2019 Copyright :
-            <a href="https://mdbootstrap.com/education/bootstrap/"> Rizal Valry</a>
+            <p id="copyRight" class="copyRight"></p>
         </div>
-        <!-- Copyright -->
-
     </footer>
 
     <!-- The Modal Bootstrap IV -->
@@ -198,6 +189,25 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Bootstrap Confirm Contact-->
+    <div class="modal" id="myWa">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">cermati.com</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="questContact"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="getLinkWhatsapp()" class="btn btn-primary">Call Now</button>
                 </div>
 
             </div>
@@ -216,22 +226,18 @@
             <form>
                 <div class="form-row">
                     <div class="col-md-7">
-                        <input type="text" class="form-control detail-mobile-edit" id="MyValidasi" value="" placeholder="Email">
+                        <input type="email" class="form-control detail-mobile-submit" name="email" autocomplete="off" id="MyValidasi" value="" placeholder="Email">
                     </div>
-                    <div class="col-md-auto">
-                        <button type="button" onclick="myJS()" class="btn btn-warning btn-sm mb-2 detail-btn-edit" data-toggle="modal" data-target="#myModal">Count me in!</button>
+                    <div class="col-lg-auto">
+                        <button type="button" onclick="myJS()" class="btn btn-yellow btn-sm mb-2 detail-btn-submit text-light space-button" data-toggle="modal" data-target="#myModal">Count me in!</button>
                     </div>
+                </div>
             </form>
         </div>
     </div>
-
-
+    <!-- cermati test - end here -->
+    <!-- My JavaScript  -->
     <script type="text/javascript" src="asset/script.js"></script>
-
-    <!-- Footer cermati test - end here -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
 </body>
 </html>
